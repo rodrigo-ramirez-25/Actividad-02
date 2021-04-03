@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagenes/logo.ico">
+    <link rel="stylesheet" href="css/estilos.css">
+    <style>
+        p.h{
+           color: green;
+           font-size: 50px;
+           font-family: algerian;
+        }
+    </style>
+    <title>Introducción CSS</title>
+</head>
+
+
+<body>    
+    <header>
+        <h1>
+          <center>
+            Introducción a CSS
+          </center>
+        </h1>
+    </header>
+ <br><br>
+<nav>   
+    <ul>
+        <li><a class="active" href="alineacion.html">Alineación</a></li>
+        <li><a href="estructura.html">Estructura CSS</a></li>
+        <li><a href="color.html">Color en CSS</a></li>
+        <li><a href="bordes.html">Bordes</a></li>
+        <li><a href="sombreado.html">Sombreado</a></li>
+        <li><a href="fondos.html">Fondos</a></li>
+      </ul>    
+</nav>
+
+
+
+<section>    
+      <article>
+        <h3>
+          ¿Qué es CSS y para qué sirve? 
+        </h3>
+        
+        <p>CSS es un lenguaje utilizado en la presentación de documentos HTML. 
+          Un documento HTML viene siendo coloquialmente “una página web”. 
+          Entonces podemos decir que el lenguaje CSS sirve para organizar la 
+          presentación y aspecto de una página web. Este lenguaje es principalmente 
+          utilizado por parte de los navegadores web de internet y por los programadores web 
+          informáticos para elegir multitud de opciones de presentación como colores, tipos y 
+          tamaños de letra, etc. 
+        </p> 
+        <br>
+
+        <h3>
+          ¿Qué significan las siglas del acrónimo CSS? <br>
+        </h3> 
+
+        <p>
+          La hoja de estilo en cascada o CSS (siglas en inglés de cascading style sheets) 
+          es un lenguaje usado para definir la presentación de un documento estructurado 
+          escrito en HTML y derivados.
+        </p>
+      </article>
+    
+      <article>
+        <h3>
+          Breve historia de CSS
+        </h3>
+        <p>
+          Las hojas de estilos aparecieron poco después que el lenguaje de etiquetas SGML, 
+          alrededor del año 1970. Desde la creación de SGML, se observó la necesidad de definir 
+          un mecanismo que permitiera aplicar de forma consistente diferentes estilos a los documentos 
+          electrónicos.
+          <br><br>
+          El gran impulso de los lenguajes de hojas de estilos se produjo con el boom de Internet y 
+          el crecimiento exponencial del lenguaje HTML para la creación de documentos electrónicos. 
+          La guerra de navegadores y la falta de un estándar para la definición de los estilos dificultaban 
+          la creación de documentos con la misma apariencia en diferentes navegadores.
+          <br><br>
+          El organismo W3C (World Wide Web Consortium), encargado de crear todos los estándares relacionados 
+          con la web, propuso la creación de un lenguaje de hojas de estilos específico para el lenguaje HTML y se presentaron nueve propuestas. Las dos propuestas que se tuvieron en cuenta fueron la CHSS (Cascading HTML Style Sheets) y la SSP (Stream-based Style Sheet Proposal).
+          <br><br>
+          La propuesta CHSS fue realizada por Håkon Wium Lie y SSP fue propuesto por Bert Bos. 
+          Entre finales de 1994 y 1995 Lie y Bos se unieron para definir un nuevo lenguaje que 
+          tomaba lo mejor de cada propuesta y lo llamaron CSS (Cascading Style Sheets).
+        </p>
+      </article>
+   
+      <article>
+        <h3>
+            Formas de aplicar CSS,
+        </h3>
+        <p>
+          Ya hemos visto que existen estilos por defecto que aplican automáticamente los navegadores 
+          web cuando no hay estilos especificados, así como que podemos embeber código CSS en las 
+          propias etiquetas de HTML, “en línea”. Vamos a ver ahora dos formas adicionales de aplicar 
+          estilos CSS: en la parte inicial del documento HTML (aplicación de estilos interna o CSS interno) 
+          o en un archivo de extensión .css independiente del archivo HTML (aplicación de estilos externa o CSS externo).
+
+          <br><br>
+          ¿QUÉ TIPO DE CSS USAR? <br>
+
+          En la siguiente tabla hacemos un resumen de las características de los distintos tipos de CSS que hemos 
+          visto hasta el momento: <br><br>
+        
+        <table border="1" width:"100%">
+            <tr bgcolor:"cyan"  align="center">
+                <td>
+                    DECLARACIÓN CSS
+                </td>
+                <td>
+                    ARCHIVOS AFECTADOS
+                </td>
+                <td>
+                    CSS SE APLICA A
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    En línea
+                </td>
+                <td>
+                    Uno, aquel donde se realiza la declaración
+                </td>
+                <td>
+                    Una línea de código.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Interna
+                </td>
+                <td>
+                    Uno, aquel en cuya cabecera se realiza la declaración
+                </td>
+                <td>
+                    Todos los elementos del archivo en los que resulte de aplicación el estilo
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Externa
+                </td>
+                <td>
+                    Todos los archivos que invoquen el archivo css
+                </td>
+                <td>
+                    Todos los elementos de los archivos afectados en que resulte de aplicación el estilo
+                </td>
+            </tr>
+        </table>
+        <br><br>
+        ejemplos: <br>
+        En linea <br>
+        <p style="color: cyan; text-decoration: overline;" >
+            Se modifica de esta manera
+        </p>
+        <br>
+        Interna
+        <p class="h">
+            Se modifica de esta manera
+        </p> <br>
+
+        externa
+        <p>
+           <h2 class="ext">
+            Se modifica de esta manera
+           </h2> 
+        </p>
+
+
+
+
+      </p>
+      </article>
+        
+    </article>
+   
+      <article>
+          <h3>
+            Qué es un comentario y como se escribe en CSS. 
+          </h3>
+      <p>
+        Un comentario es una cadena de código o texto en HTML, XML, CSS, JS y otros lenguajes de programación que 
+        no es visible en su navegador web. El comentario es utilizado para ofrecer alguna información sobre el código, 
+        desactivarlo temporalmente o para presentar otros comentarios de los desarrolladores de código. 
+      </p>
+      <center>
+        <img src="imagenes/comentario.jpg" alt="" width="50%">
+      </center>
+     
+      </article>
+
+    <br/><br/>
+  </section>
+  <aside>
+     <div id="cuadro">
+         <center>
+            <img src="imagenes/escudo.png" alt="" width="75%" >
+         </center>
+    
+      </div>
+  </aside>
+  <footer>
+      <p>
+        Copyright 2021 Rodrigo Ramírez<br>
+      </p> 
+  </footer>
+
+</body>
+</html>    

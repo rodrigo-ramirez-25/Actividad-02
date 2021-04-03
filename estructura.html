@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagenes/logo.ico">
+    <link rel="stylesheet" href="css/estilos.css">    
+    <title>Estructura de CSS</title>
+</head>
+
+
+<body>
+    <header>
+        <h1>
+            <center>
+                Estructura de CSS
+            </center>
+        </h1>
+    </header>  
+    <br><br>
+     
+ 
+<nav>
+   
+    <ul>
+        <li><a class="active" href="index.html">Inicio</a></li>
+        <li><a href="alineacion.html">Alineación</a></li>
+        <li><a href="color.html">Color en CSS</a></li>
+        <li><a href="bordes.html">Bordes</a></li>
+        <li><a href="sombreado.html">Sombreado</a></li>
+        <li><a href="fondos.html">Fondos</a></li>
+      </ul>
+    
+</nav>
+
+
+<section>
+    
+    <article>
+          <h3>
+            Estructura de CSS 
+          </h3>
+        
+      <p>
+        La estructura completa es llamada regla predeterminada (pero a menudo «regla» para abreviar). 
+        Nota también los nombres de las partes individuales:
+        <br><br>
+        Selector <br>
+        El elemento HTML en el que comienza la regla. Esta selecciona el(los) elemento(s) a dar estilo 
+        (en este caso, los elementos <p> ). Para dar estilo a un elemento diferente, solo cambia el selector.
+        <br><br>
+        Declaración <br>
+        Una sola regla como color: red; especifica a cuál de las propiedades del elemento quieres dar estilo.
+        <br><br>
+        Propiedades  <br>
+        Maneras en las cuales puedes dar estilo a un elemento HTML. (En este caso, color es una propiedad 
+        del elemento <p> ). En CSS, seleccionas qué propiedad quieres afectar en tu regla.
+        <br><br>
+        Valor de la propiedad <br>
+        A la derecha de la propiedad, después de los dos puntos (:), tienes el valor de la propiedad, para 
+        elegir una de las muchas posibles apariencias para una propiedad determinada (hay muchos valores para 
+        color además de red).
+        <br><br>
+        Nota las otras partes importantes de la sintaxis:
+        <br><br>
+        1. Cada una de las reglas (aparte del selector) deben estar encapsuladas entre llaves ({}).
+        <br> 2. Dentro de cada declaración, debes usar los dos puntos (:) para separar la propiedad de su valor.
+        <br> 3. Dentro de cada regla, debes usar el punto y coma (;) para separar una declaración de la siguiente.
+        <br><br>
+        De este modo para modificar varios valores de propiedad a la vez, solo necesitas escribirlos separados por 
+        punto y coma (;), así:
+
+      </p> <br>
+
+    </article>
+   
+      <article>
+
+    <h3>
+        Tipos de selectores
+    </h3>
+      <p>
+        Selectores <br>
+        Veamos ahora cuáles son los selectores básicos que podemos utilizar en CSS.
+        <br><br>
+        Selector universal <br><br>
+        Sintaxis: * { atributo:valor; }
+        <br><br>
+        Ejemplo:* { color: grey; }/* El estilo se aplicará a todos los elementos de la página*/
+        <br><br>
+        Selector etiqueta <br><br>
+        Sintaxis: etiqueta { atributo:valor } <br><br>
+        Ejemplo: p {color: green;}  /* El estilo se aplicará a todos los elementos <p>.*/
+        <br><b></b>
+        Selector clase <br><br>
+        Sintaxis: .clase { atributo:valor } <br><br>
+        Ejemplo: .index {color: red;} /* El estilo se aplicará a cualquier elemento que tenga la clase .index*/ 
+        <br><br>
+        Selector identificador <br>
+        El selector identificador utiliza el atributo id para seleccionar un elemento. Solo puede haber un elemento 
+        con un id dado en un documento.
+        <br><br>
+        Sintaxis: #id { atributo:valor } <br><br>
+        Ejemplo: #cent {color: blue;} /* El estilo se aplicará al elemento que tenga el id #cent */
+        <br><br>
+        Selector descendiente <br>
+        Un elemento es descendiente de otro cuando se encuentra entre las etiquetas de apertura y de cierre del elemento 
+        padre. Su sintaxis 
+        es: selector1 selector2… slectorN. Siendo el selector N el elemento sobre el que se aplica el estilo.
+        <br><br>
+        selector1 selector2 selectorN{ <br>
+            propiedad: valor; <br>
+        }
+        <br><br>
+        Combinación de selectores <br><br>
+        La combinación de selectores nos permite dar un estilo a todos los selectores indicados.
+        <br><br>
+        selector1, selector2, selector3{ <br>
+            propiedad: valor; <br>
+        }
+        <br><br>
+        Selector de hijos <br><br>
+        Se usa para seleccionar un elemento que es hijo de otro elemento y se indica mediante el signo “mayor que” (>).
+        <br><br>
+        selector1 > selector2{ <br>
+            propiedad: valor; <br>
+        }
+        <br><br>
+        Selector adyacente <br><br>
+        Se usa para seleccionar elementos que son hermanos, es decir, su elemento padre es el mismo y están seguidos
+         en el código HTML. Se indica mediante el signo “más” (+).
+        <br><br>
+        selector1 + selector2{ <br>
+        propiedad: valor; <br>
+        }
+    </p>
+      </article>
+
+    
+      <article>
+        <h3>
+            Elementos de línea y de bloque
+        </h3>
+      <p>
+        Todas las etiquetas del lenguaje HTML se pueden clasificar en etiquetas de línea o de bloque. 
+        <br><br>
+        Una etiqueta de línea es aquella que ocupa el espacio mínimo necesario en horizontal, y permite que otro 
+        elemento se coloque a su lado. En cambio una etiqueta de bloque, ocupa todo el ancho disponible y no permite 
+        que otro elemento se coloque a su lado (aunque aparentemente tenga lugar suficiente).
+        <br><br> 
+         
+        Etiquetas de línea (las más usadas):<br><br>
+
+        <table width:"100%" border="1">
+            <tr>
+                <td>
+                    <b>Negrita: </b>  <br>
+                    <i>Cursiva: </i> <br>
+                    <u>Subrayado: </u><br>
+                    <small>Pequeña:</small><br>
+                    Super<sup>indice</sup> <br>
+                    Sub<sub>indice</sub> <br>
+                </td>
+                <td>
+                    < B>…< /B> <br>
+                    < I>…< /I><br>
+                    < U>…< /U><br>
+                    < SMALL>…< /SMALL><br>
+                    < SUP>…< /SUP><br>
+                    < SUB >…< /SUB ><br>
+
+                </td>
+            </tr>
+        </table>
+              
+
+        Etiquetas de bloque (las más usadas):<br><br>
+        < h1>, < h2>, < h3>, < p>, < ul>, < li>, < div>, < header>, < section>, <br>
+
+        < article>, < footer>, < form>, < table> <br><br>
+        algunos ejemplos <br><br>
+        form <br>
+        Formulario de entrada. <br><br>
+        <form action="">
+            <input type="text"><br><br>
+        </form>
+
+        H de encabezamiento <br><br>
+        Niveles de cabecera 1-6. <br><br>
+        < h1>, < h2>, < h3>, < h4>, < h5>, < h6> <br><br>
+        <h1>Encabezamiento con h1</h1>
+        <h2>Encabezamiento con h2</h2>
+        <h3>Encabezamiento con h3</h3>
+        <h4>Encabezamiento con h4</h4>
+        <h5>Encabezamiento con h5</h5>
+        <h6>Encabezamiento con h6</h6>
+
+      </p>
+
+      </article>
+        
+    </article>
+   
+    <article>
+          <h3>
+            ¿Qué es el modelo de cajas en CSS? 
+          </h3>
+      <p>
+        El modelo de cajas o "box model" es seguramente la característica más importante 
+        del lenguaje de hojas de estilos CSS, ya que condiciona el diseño de todas las 
+        páginas web. El modelo de cajas es el comportamiento de CSS que hace que todos 
+        los elementos de las páginas se representen mediante cajas rectangulares. <br><br>
+        ejemplo:
+        <center><img src="imagenes/ejemplo.PNG" alt=""></center>
+          
+       
+      </p>
+           
+      </article>
+
+    <br/><br/>
+  </section>
+  <aside>
+     <div id="cuadro">
+         <center>
+             <img src="imagenes/escudo.png" alt="" width="75%" >
+         </center>
+    
+      </div>
+  </aside>
+  <footer>
+    <p>
+        Copyright 2021 Rodrigo Ramírez<br>
+    </p>
+  </footer>
+
+</body>
+</html>    
+
+
